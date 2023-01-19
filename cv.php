@@ -1,12 +1,12 @@
 <?php
-include '../common/head.php';
+include 'head.php';
 ?>
 </head>
 
 <body>
     <?php
-    include '../common/header.php';
-    include '../common/footer.php';
+    include 'header.php';
+    include 'footer.php';
     ?>
     <section class="cv_part">
         <h2 class="primary">Formation</h2>
