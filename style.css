@@ -5,19 +5,23 @@
 }
 :root {
   --main_font_color: #00f7ff;
-  --second_font_color: #9c9696;
+  --second_font_color: #d5d5d5;
   --main_font: "Iceland";
   --second_font: "Roboto Mono";
 }
 body{
 
-  background-image: linear-gradient(120deg, #14173b, #30366f);
+  height: 100%;
+  font-family: var(--main_font);
+  background-color:  #30366f;
 }
 .wrapper{
+  /* width: 100vw;
+  height: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-family: var(--main_font);
+
 }
 /* .container {
   height: 100%;
@@ -25,7 +29,6 @@ body{
 } */
 .primary {
   color: var(--main_font_color);
-  font-family: var(--main_font);
 }
 header{
   position: fixed;
@@ -43,25 +46,22 @@ header{
 .head_titre {
   color: var(--main_font_color);
   font-size: 5em;
-  font-family: var(--main_font);
   margin: 10% 5% 0 5%;
 }
 .sous_titre {
   color: var(--second_font_color);
-  font-family: var(--main_font);
   font-size: 3em;
   margin: 0 5%;
 }
 .footer {
-  /* position: absolute;
-  bottom: 0; */
-  height: 100px;
+  position: absolute;
+  bottom: 0;
+  height: 50px;
   width: 100%;
   text-align: center;
 }
 .description {
   color: var(--second_font_color);
-  font-family: var(--main_font);
   font-size: 2.5em;
   max-width: 60%;
   margin: 5%;
@@ -87,10 +87,14 @@ a:hover {
   left: 70%;
   top: 30%;
 }
+
+/* ------------------realisations ---------------------------*/
+
 .real_container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
+  margin-top: 100px;
 }
 .imge {
   width: 65%;
@@ -109,15 +113,17 @@ a:hover {
 }
 .commentaire {
   margin-top: 10%;
-  font-family: var(--main_font);
   color: var(--main_font_color);
   font-size: 1.5em;
   max-width: 80%;
 }
+
+/* ----------------------------CV------------------------------ */
+
+
 .cv_part {
   margin: 2%;
   color: var(--second_font_color);
-  font-family: var(--main_font);
   font-size: 1.5em;
 }
 .detail {
@@ -129,9 +135,14 @@ ul {
 .tab {
   margin-left: 8%;
 }
-.icones {
+
+.competences{
   display: flex;
   flex-direction: row;
+}
+.icones {
+  display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
 }
 .side_nav{
@@ -152,7 +163,7 @@ ul {
   text-decoration: none;
   font-size: 20px;
   color: var(--main_font_color);
-  display: block;
+  display: none;
   transition: 0.3s;
 }
 .side_bar_menu{
@@ -183,7 +194,7 @@ ul {
 }
 .burger_icon span {
 
-  display: block;
+  /* display: none; */
   width: 35px;
   height: 5px;
   background-color: var(--main_font_color);
@@ -194,7 +205,6 @@ ul {
   top: -10px;
   right: 5px;
   /* font-size: 80px; */
-  font-family: var(--main_font);
   font-weight: 900;
 }
 .x{
@@ -206,6 +216,12 @@ ul {
   transition: all 0.3s ease;
 }
 @media screen and (max-width: 860px){
+  .side_nav{
+    display: block;
+  }
+  .side_nav span{
+    display: block;
+  }
   .log, .nav_bar {
     display: none;
   }
@@ -214,7 +230,7 @@ ul {
 font-size: 3em;
   }
   .sous_titre, .description{
-    font-size: 1em
+    font-size: 2em;
   }
 }
 ;

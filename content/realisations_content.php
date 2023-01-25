@@ -1,12 +1,3 @@
-<?php
-include 'head.php';
-?>
-
-<body>
-    <?php
-    include 'header.php';
-    include 'footer.php';
-    ?>
     <div class="real_container">
         <div class="card card1"><a href="https://durand.needemand.com/realisations/projet_couture/index.html">
 
@@ -55,6 +46,3 @@ include 'head.php';
 </p>
 </div>
     </div>
-</body>
-
-</html>

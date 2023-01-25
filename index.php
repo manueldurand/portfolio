@@ -1,25 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
 <?php
-include 'head.php';
-?>
-
-<body>
-    <div class="wrapper">
-
-
-    
-    <?php include 'header.php';?>
-    <main class="container">
-        <?php
-        
-        include 'index_content.php';
-        include 'footer.php';
-        ?>
-
-    </main>
-    </div>
-    <script src="main.js"></script>
-</body>
-
-</html>
+$page = filter_input(INPUT_GET, "page", FILTER_SANITIZE_STRING);
+if (!isset($page)) {
+    $page = 'accueil';
+}
+include 'common/template.php';

@@ -13,5 +13,5 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+    <title>Portfolio..Manuel Durand</title>
 </head>

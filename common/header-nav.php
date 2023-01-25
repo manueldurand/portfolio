@@ -1,18 +1,18 @@
 <header>
     <nav class="nav_bar primary">
         <ul>
-            <li><a href="index.php"> Accueil</a></li>
-            <li><a href="realisations.php">Réalisations</a></li>
-            <li><a href="cv.php">Veilles Techno.</a></li>
-            <li></li>
+            <li><a href="index.php?page=accueil"> Accueil</a></li>
+            <li><a href="index.php?page=realisations">Réalisations</a></li>
+            <li><a href="index.php?page=cv">C.V.</a></li>
+            <li>Veilles Techno.</li>
         </ul>
     </nav>
     <div class="side_nav" id="side_nav">
         <span class="x"><a href="#" id="closeBtn" class="close">X</a></span>
         <ul class="side_bar_menu">
-            <li><a href="index.php"> Accueil</a></li>
-            <li><a href="realisations.php">Réalisations</a></li>
-            <li><a href="cv.php">C.V.</a></li>
+            <li><a href="index.php?page=accueil"> Accueil</a></li>
+            <li><a href="index.php?page=realisations">Réalisations</a></li>
+            <li><a href="index.php?page=cv">C.V.</a></li>
             <li>Veilles Techno.</li>
         </ul>
     </div>
