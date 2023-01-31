@@ -4,15 +4,15 @@
   box-sizing: border-box;
 }
 :root {
-  --main_font_color: #00f7ff;
-  --second_font_color: #d5d5d5;
+  --main_font_color: #00aaff;
+  --second_font_color: #f3f3f3;
   --main_font: "Iceland";
-  --second_font: "Roboto Mono";
+  --second_font: "Roboto";
 }
 body {
   height: 100%;
   font-family: var(--main_font);
-  background-color: #30366f;
+  background-color: #242956;
   line-height: 2em;
 }
 .wrapper {
@@ -27,6 +27,9 @@ body {
 } */
 .primary {
   color: var(--main_font_color);
+}
+.bold{
+  font-weight: 700;
 }
 header {
   position: fixed;
@@ -248,6 +251,66 @@ ul {
   display: none;
   transition: all 0.3s ease;
 }
+
+/* ============================VEILLES TECHNO==================================== */
+
+.veilles-container{
+  margin-top: 100px;
+}
+
+.veille-card{
+font-size: 1.5em;
+color: var(--second_font_color);
+border: var(--main_font_color) 2px solid;
+border-radius: 10px;
+padding: 2%;
+margin: 2%;
+
+}
+.first-word{
+  text-transform: uppercase;
+  font-size: 2em;
+  color: var(--main_font_color);
+}
+.content{
+  margin-top: 5%;
+  font-family: var(--second_font);
+  font-size: 0.8em;
+  font-weight: 400;
+}
+.texte{
+
+  margin: 2% 1%;
+}
+.capture{
+  margin: 2%;
+  border: var(--main_font_color) 2px solid;
+  border-radius: 10px;
+}
+#bootstrap{
+  margin-top: 100px;
+}
+#accordion li label{
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+#accordion li label span{
+  transform: rotate(90deg);
+  font-size: 22px;
+}
+#accordion label + input[type="radio"]{
+  display: none;
+}
+#accordion .content{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+#accordion label + input[type="radio"]:checked + .content{
+max-height: 3000px;
+}
+
 
 /* ============================MEDIA QUERIES==================================== */
 

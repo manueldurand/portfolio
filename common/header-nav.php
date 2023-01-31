@@ -6,7 +6,7 @@
                     <li><a href="index.php?page=accueil"> Accueil</a></li>
                     <li><a href="index.php?page=realisations">Réalisations</a></li>
                     <li><a href="index.php?page=cv">C.V.</a></li>
-                    <li>Veilles Techno.</li>
+                    <li><a href="index.php?page=veilles"> Veilles Techno.</a></li>
                 </ul>
             </nav>
         </header>    
@@ -16,7 +16,7 @@
                     <li><a href="index.php?page=accueil"> Accueil</a></li>
                     <li><a href="index.php?page=realisations">Réalisations</a></li>
                     <li><a href="index.php?page=cv">C.V.</a></li>
-                    <li>Veilles Techno.</li>
+                    <li><a href="index.php?page=veilles"> Veilles Techno.</a></li>
                 </ul>
             </div>
             <a href="#" id="openBtn">
