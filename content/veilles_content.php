@@ -34,9 +34,9 @@
                         La plus rapide est d'utiliser un lien vers le fichier CSS hébergé sur BootstrapCDN.
 
                         <p>
-                            <important class="primary">=> CDN : Content Delevery Network, réseau de distribution de contenu,</important>
-                            qui permet de fournir rapidement des fichiers en ligne à des utilisateurs distants en les repliant sur des serveurs dédiés 
-                            à des emplacements géographiques stratégiques. Cela permet d'améliorer les performances 
+                            <important class="primary">=> CDN : Content Delevery Network, soit réseau de distribution de contenu,</important>
+                            qui permet de fournir rapidement des fichiers en ligne à des utilisateurs distants en les repliant sur des serveurs dédiés
+                            à des emplacements géographiques stratégiques. Cela permet d'améliorer les performances
                             et la disponibilité du contenu pour les utilisateurs en réduisant les temps de chargement et la latence.
                         </p>
                         Ce lien est à ajouter avant les autres liens de fichiers CSS, dans l'entête du fichier HTML.
@@ -84,44 +84,46 @@
 
                         </div>
                         <h3 class="primary titre">Les classes prédéfinies</h3>
-                        
 
-                        Bootstrap permet l'utilisation de classes pré-définies,
+                        <div class="texte">
+                            Bootstrap permet l'utilisation de classes pré-définies,
 
-                        par exemple pour les marges, padding, et les espaces entre les colonnes :
+                            par exemple pour les marges, padding, et les espaces entre les colonnes :
 
-                        <ul>
-                            <li>- p-5 = padding 5 pixels</li>
-                            <li>- m-10 = marge de 10 px</li>
-                            <li>- px-4 = padding de 4 px</li>
-                            <li>- g = espacement entre les colonnes ( g pour gutters en anglais, x pour horizontal, y pour vertical)</li>
-                        </ul>
-                        
+                            <ul>
+                                <li>- p-5 = padding 5 pixels</li>
+                                <li>- m-10 = marge de 10 px</li>
+                                <li>- px-4 = padding de 4 px</li>
+                                <li>- g = espacement entre les colonnes ( g pour gutters en anglais, x pour horizontal, y pour vertical)</li>
+                            </ul>
 
-                        <span class="primary">pour les couleurs : </span>
-                        <ul>
-                            <li>bg-light par exemple,et aussi</li>
-                            <li>-primary : bleu</li>
-                            <li>-secondary : gris</li>
-                            <li>-success : vert</li>
-                            <li>-danger : rouge</li>
-                            <li>-warning : orange</li>
-                            <li>-info : turquoise</li>
-                            <li>-dark ...</li>
-                            <li>-white...</li>
-                            <li>-transparent...</li>
-                        </ul>
 
-                        <p>lien vers la documentation <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">getbootstrap.com</a></p>
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+                            <span class="primary">pour les couleurs : </span>
+                            <ul>
+                                <li>bg-light par exemple,et aussi</li>
+                                <li>-primary : bleu</li>
+                                <li>-secondary : gris</li>
+                                <li>-success : vert</li>
+                                <li>-danger : rouge</li>
+                                <li>-warning : orange</li>
+                                <li>-info : turquoise</li>
+                                <li>-dark ...</li>
+                                <li>-white...</li>
+                                <li>-transparent...</li>
+                            </ul>
+
+                            <p>lien vers la documentation <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">getbootstrap.com</a></p>
+                        </div>
+
+
+
+
+
+
+
+
+
+
                     </div>
                 </div>
             </div>
