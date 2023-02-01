@@ -133,13 +133,13 @@
                 <h2 class="primary">Git et la gestion de versions</h2>
 
                 <br>
-                <p><span class="primary bold"> </span>
-                <div class="texte">
-                    Un gestionnaire de version est un système qui enregistre l'évolution d'un fichier ou d'un ensemble de fichiers au cours du temps
-                    de manière à ce qu'on puisse rappeler une version antérieure d'un fichier à tout moment.
-                    Il est généralement utilisé avec des fichiers sources de logiciels, mais on peut l'utiliser avec pratiquement tous types de fichiers.
-                </div>
                 <article class="texte">
+                    <div>
+                        Un gestionnaire de version est un système qui enregistre l'évolution d'un fichier ou d'un ensemble de fichiers au cours du temps
+                        de manière à ce qu'on puisse rappeler une version antérieure d'un fichier à tout moment.
+                        Il est généralement utilisé avec des fichiers sources de logiciels, mais on peut l'utiliser avec pratiquement tous types de fichiers.
+                    </div>
+
                     <h3 class="primary titre">
                         V.C.S. : Version Control System
                     </h3>
@@ -155,8 +155,8 @@
                         Utiliser un VCS signifie aussi généralement que si vous vous trompez ou que vous perdez des fichiers, vous pouvez facilement revenir à un état stable.
                         De plus, vous obtenez tous ces avantages avec peu de travail additionnel.
                     </p>
-                    <h3>Les systèmes de versions locaux</h3>
-                    <article class="texte">
+                    <h3 class="primary titre">Les systèmes de versions locaux</h3>
+                    <article>
                         <p>
                             La méthode courante pour la gestion de version est généralement de recopier les fichiers dans un autre répertoire
                             (peut-être avec un nom incluant la date dans le meilleur des cas). Cette méthode est la plus courante parce que c'est la plus simple,
@@ -167,10 +167,10 @@
                             Pour traiter ce problème, les programmeurs ont développé il y a longtemps des VCS locaux qui utilisaient
                             une base de données simple pour conserver les modifications d'un fichier, comme illustrés ci-dessous.
                         </p>
-                        <div class=" flex-cont">
+                        <figure class=" flex-cont">
                             <img class="capture" src="assets/img/git_cap1.png" alt="gestion_locale">
                             <img class="capture" src="assets/img/git_cap2.png" alt="gestion_locale">
-                        </div>
+                        </figure>
                     </article>
                     <h3 class="primary">Système de verion distribué (DVCS)</h3>
                     <figure>
@@ -188,32 +188,32 @@
                     <p>
                         Git fut créé en 2005 par Linus Tornvalds, créateur de Linux, pour remplacer le DVCS BitKeeper qui hébergeait le projet Linux.
                     </p>
-                    <article class="texte">
+                    <article>
                         La différence majeure entre Git et les autres VCS (Subversion et autres) réside dans la manière dont Git considère les données.
                         Au niveau conceptuel, la plupart des autres systèmes gèrent l'information comme une liste de modifications de fichiers.
                         Ces systèmes (CVS, Subversion, Perforce, Bazaar et autres) considèrent l'information qu'ils gèrent comme une liste de fichiers et les modifications
                         effectuées sur chaque fichier dans le temps.
-                        <div class="texte">
+                        <div>
                             Git pense ses données plus comme un instantané d’un mini système de fichiers. À chaque fois que vous validez ou enregistrez
                             l’état du projet dans Git,
                             il prend effectivement un instantané du contenu de votre espace de travail à ce moment et enregistre une référence à cet instantané.
                             Pour être efficace, si les fichiers '’ont pas changé, Git ne stocke pas le fichier à nouveau, juste une référence
                             vers le fichier original qu’il a déjà enregistré. Git pense ses données plus à la manière d'un flux d'instantanés.
                         </div>
-                        <div class="texte">
+                        <div>
                             La plupart des opérations de Git ne nécessitent que des fichiers et ressources locaux — généralement aucune information venant d'un autre ordinateur du réseau n’est nécessaire.
                             Comme vous disposez de l’historique complet du projet localement sur votre disque dur, la plupart des opérations semblent instantanées.
                             Par exemple, pour parcourir l’historique d'un projet, Git n'a pas besoin d'aller le chercher sur un serveur pour vous l'afficher ;
                             il n’a qu’à simplement le lire directement dans votre base de données locale. Cela signifie que vous avez quasi-instantanément accès à l'historique du projet.
                         </div>
                         <p class="primary bold">Git gère trois états dans lesquels les fichiers peuvent résider : modifié, indexé et validé.</p>
-                        <ul>
+                        <ol>
                             <li>Modifié (modified) signifie que vous avez modifié le fichier mais qu'il n'a pas encore été validé.</li>
                             <li>Indexé (staged) signifie que vous avez marqué un fichier modifié dans sa version actuelle
                                 pour qu’il fasse partie du prochain instantané du projet.</li>
                             <li>Validé (commited) signifie que les données sont stockées en sécurité dans votre base de données locale.</li>
-                        </ul>
-                        <div class="texte">
+                        </ol>
+                        <div>
                             Le répertoire Git est l’endroit où Git stocke les méta-données et la base de données des objets de votre projet.
                             C’est la partie la plus importante de Git, et l'est ce qui est copié lorsque vous clonez un dépôt depuis un autre ordinateur.
                             Le répertoire de travail est une extraction unique d'une version du projet. Ces fichiers sont extraits depuis la base de données compressée dans le répertoire
@@ -223,7 +223,7 @@
                             qui stocke les informations concernant ce qui fera partie du prochain instantané. On l'appelle aussi des fois la zone de préparation.
                         </div>
                     </article>
-                    <div class="texte">
+                    <div>
                         <h3 class="primary">L’utilisation standard de Git se passe comme suit :</h3>
                         <ol>
                             <li>vous modifiez des fichiers dans votre répertoire de travail.</li>
@@ -231,8 +231,8 @@
                             <li>vous validez, ce qui a pour effet de basculer les instantanés des fichiers de l'index dans la base de données du répertoire Git.</li>
                         </ol>
                     </div>
-                        <cite>Source : Pro Git, écrit par
-Scott Chacon et Ben Straub</cite>
+                    <cite>Source : Pro Git, écrit par
+                        Scott Chacon et Ben Straub</cite>
                 </article>
 
 
@@ -247,35 +247,37 @@ Scott Chacon et Ben Straub</cite>
         <input type="radio" name="accordion" id="third">
         <div class="content">
             <div id="laravel">
-                <p class="primary bold">Laravel est un framework PHP open-source populaire utilisé pour le développement de sites web et d'applications. </p>
+                <article class="texte">
+                    <p class="primary bold">Laravel est un framework PHP open-source populaire utilisé pour le développement de sites web et d'applications. </p>
 
-                <p>Il a été créé en 2011 par Taylor Otwell et est devenu un des frameworks PHP les plus populaires avec une large communauté de développeurs.</p>
-                <br>
-                <p> Laravel se distingue par ses fonctionnalités intuitives et faciles à utiliser, telles que l'injection de dépendances,
-                    la gestion de routes, la gestion de bases de données et le système de modèles <span class="primary">Eloquent</span> pour la gestion des données.
-                    Il offre également un ensemble de commandes pour automatiser les tâches répétitives telles que la génération de code, le déploiement et le test.</p>
-                <br>
-                <p>
+                    <p>Il a été créé en 2011 par Taylor Otwell et est devenu un des frameworks PHP les plus populaires avec une large communauté de développeurs.</p>
+                    <br>
+                    <p> Laravel se distingue par ses fonctionnalités intuitives et faciles à utiliser, telles que l'injection de dépendances,
+                        la gestion de routes, la gestion de bases de données et le système de modèles <span class="primary">Eloquent</span> pour la gestion des données.
+                        Il offre également un ensemble de commandes pour automatiser les tâches répétitives telles que la génération de code, le déploiement et le test.</p>
+                    <br>
+                    <p>
 
-                    <span class="primary"> Laravel utilise le design pattern MVC (Model-View-Controller),</span>
-                    qui sépare les couches de logique de l'application pour une meilleure organisation et une maintenance plus facile.
-                    Il propose également une variété d'outils de sécurité pour protéger les applications contre les vulnérabilités courantes
-                    telles que les attaques par injection SQL et les failles XSS.
+                        <span class="primary"> Laravel utilise le design pattern MVC (Model-View-Controller),</span>
+                        qui sépare les couches de logique de l'application pour une meilleure organisation et une maintenance plus facile.
+                        Il propose également une variété d'outils de sécurité pour protéger les applications contre les vulnérabilités courantes
+                        telles que les attaques par injection SQL et les failles XSS.
 
-                </p>
-                <br>
-                <p>
+                    </p>
+                    <br>
+                    <p>
 
-                    L'un des avantages de Laravel est sa facilité de démarrage.
-                    Avec un générateur de code intégré et une documentation claire, les débutants peuvent rapidement développer des applications de qualité.
-                    De plus, la communauté de développeurs actifs fournit une aide en ligne gratuite et une variété de packages disponibles pour étendre les fonctionnalités de Laravel.
+                        L'un des avantages de Laravel est sa facilité de démarrage.
+                        Avec un générateur de code intégré et une documentation claire, les débutants peuvent rapidement développer des applications de qualité.
+                        De plus, la communauté de développeurs actifs fournit une aide en ligne gratuite et une variété de packages disponibles pour étendre les fonctionnalités de Laravel.
 
-                </p>
-                <br>
-                <p>
-                    En conclusion, Laravel est un excellent choix pour les développeurs débutants et les entreprises souhaitant développer des applications web performantes
-                    et faciles à utiliser. Avec une communauté active et une documentation abondante, Laravel offre une plateforme stable et évolutive pour les projets futurs.
-                </p>
+                    </p>
+                    <br>
+                    <p>
+                        En conclusion, Laravel est un excellent choix pour les développeurs débutants et les entreprises souhaitant développer des applications web performantes
+                        et faciles à utiliser.
+                    </p>
+                </article>
 
             </div>
         </div>
@@ -284,7 +286,7 @@ Scott Chacon et Ben Straub</cite>
             <label for="fourth" class="primary bold first-word titre">Qu'est-ce qu'une A.P.I. ?<span>&#x3e;</span></label>
             <input type="radio" name="accordion" id="fourth">
             <div class="content">
-                <div class="">
+                <article class="texte">
                     <p>API signifie "Application Programming Interface".
                         C'est un ensemble de règles et de spécifications pour accéder à une application ou un service en ligne. </p>
 
@@ -333,27 +335,17 @@ Scott Chacon et Ben Straub</cite>
 
                     </p>
 
-                </div>
+                </article>
             </div>
         </li>
         <li class="veille-card">
             <label for="fifth" class="primary ">x<span>&#x3e;</span></label>
             <input type="radio" name="accordion" id="fifth">
             <div class="fin-accordion">
-                <div class="">
-
-
-                </div>
             </div>
         </li>
         <div>
         </div>
-
-
-
     </ul>
-
-
-
 
 </section>

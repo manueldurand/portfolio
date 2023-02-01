@@ -160,13 +160,13 @@ ul {
   padding: 2% 0 0 2%;
 }
 .dms::before {
-  content: url(assets/icons8-bass-drum-30.png);
+  content: url(assets/icons8-snare-drum-30.png);
 }
 .guit::before {
-  content: url(assets/icons8-rock-music-30.png);
+  content: url(assets/icons8-rock-music-30\(1\).png);
 }
 .mic::before {
-  content: url(assets/icons8-microphone-30.png);
+  content: url(assets/icons8-microphone-24.png);
 }
 .competences {
   display: flex;
@@ -287,6 +287,9 @@ margin: 2%;
   border: var(--main_font_color) 2px solid;
   border-radius: 10px;
   max-width: 450px;
+}
+ol li{
+  margin-left: 3%;
 }
 #bootstrap{
   margin-top: 100px;

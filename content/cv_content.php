@@ -3,8 +3,9 @@
 
     <h2 class="primary">Formation</h2>
     <ul>
-        <li>2022 : Greta Montpellier,
-            Formation Développeur web/ web mobile
+        <li>2023 : Stage au sein de l'agence <a href="https://www.keole.net/" target="_blank">Kéole</a></li>
+        <li>2022-23 : Greta Montpellier,
+            Formation Développeur web / web mobile
         </li>
         <li>1999 : Université Paul Valéry, Montpellier. Licence / Maîtrise Arts du spectacle, Cinéma</li>
         <li>1995 : B.T.S Audiovisuel et techniques du son</li>
@@ -12,7 +13,7 @@
 </section>
 <section class="cv_part cv_part_2">
     <div class="text">
-        <h2 class="primary">Expériences professionnelles</h2>
+        <h2 class="primary">Expériences professionnelles (avant...)</h2>
         <ul>
             <li>Pianiste freelance tous styles, world, chanson, funk, électro, théâtre...
             </li>
@@ -30,6 +31,7 @@
         </ul>
     </div>
     <div class="liens">
+        <h3 class="ecoute" >Ecouter / Voir</h3>
         <ul>
             <li><span class="detail"><a href="https://www.stagesmusiquesfestives.net/">stages de musique</a></span></li>
             <li><a href="https://www.youtube.com/channel/UCgSNmM7UvqnCIKwcYijzd3g" target="_blank">ma chaîne YouTube</a></li>
@@ -39,7 +41,8 @@
     </div>
 </section>
 <div class=" liens-cache cv_part">
-        <ul>
+
+        <ul><li>Ecouter / Voir :</li>
             <li><span class="detail"><a href="https://www.stagesmusiquesfestives.net/">stages de musique</a></span></li>
             <li><a href="https://www.youtube.com/channel/UCgSNmM7UvqnCIKwcYijzd3g" target="_blank">ma chaîne YouTube</a></li>
             <li><a href="https://youtu.be/ILoW7qRCJjU" target="_blank">les fous chantants</a></li>
@@ -48,16 +51,19 @@
     </div>
 <section class="cv_part competences">
     <div class="comp-text">
-        <h2 class="primary">Compétences</h2>
-        <ul>
-            <li>Réalisation de pages en HTML / CSS : 5/5
+        <h2 class="primary">Compétences / Code (maintenant !)</h2>
+        <ul><li>Maquettage d'application, conception graphique avec Figma</li>
+            <li>Réalisation de pages en HTML / CSS et préprocesseur SASS
             </li>
-            <li></li>
+            <li>Développement d'une interface web dynamique, JavaScript, PHP</li>
             <li>Réalisation de pages interactives en JavaScript, contrôle de contenu multimédia.
             </li>
             <li>
-                Avec PHP : sites web dynamiques, gestion de bases de données.
+                Réalisation d'une interface utilisateur avec solution de gestion de contenu, ou e-commerce
             </li>
+            <li>Créer une base de données : phpmyadmin, workbench</li>
+            <li>Développer la partie Back-end d'une application web mobile en PHP</li>
+            <li>Frameworks : Symfony, Laravel</li>
         </ul>
     </div>
     <div class="icones">
